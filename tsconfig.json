@@ -1,0 +1,17 @@
+{
+  "extends": "@tsconfig/node-lts-strictest-esm/tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "ignoreDeprecations": "5.0",
+    "noEmit": true,
+    "stripInternal": true,
+    "sourceMap": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "incremental": true
+  },
+  "ts-node": {
+    "esm": true
+  }
+}

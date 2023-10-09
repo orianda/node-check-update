@@ -1,0 +1,15 @@
+/.git/**
+/.idea/**
+/.nyc_output/**
+/bin/**/*.d.mts
+/bin/**/*.mjs
+/bin/**/*.d.ts
+/bin/**/*.js
+/coverage/**
+/lib/**/*.d.mts
+/lib/**/*.mjs
+/lib/**/*.d.ts
+/lib/**/*.js
+/node_modules/**
+/tmp/**
+/var/**

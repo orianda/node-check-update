@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false
+  },
+  "include": [
+    "./bin/**/*.ts",
+    "./bin/**/*.mts",
+    "./lib/**/*.ts",
+    "./lib/**/*.mts"
+  ],
+  "exclude": [
+    "./bin/**/*.spec.ts",
+    "./bin/**/*.spec.mts",
+    "./lib/**/*.spec.ts",
+    "./lib/**/*.spec.mts"
+  ]
+}

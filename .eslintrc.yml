@@ -1,0 +1,70 @@
+root: true
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaVersion: 2022
+  sourceType: module
+  ecmaFeatures:
+    impliedStrict: true
+    jsx: false
+  project: "./tsconfig.json"
+plugins:
+  - "@typescript-eslint"
+  - "import"
+env:
+  browser: false
+  node: true
+  mocha: false
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
+  - plugin:import/typescript
+settings:
+  import/parsers:
+    "@typescript-eslint/parser":
+      - ".js"
+      - ".ts"
+      - ".jsx"
+      - ".tsx"
+      - ".cjs"
+      - ".mjs"
+  import/resolver:
+    node: { }
+    typescript:
+      directory: "/tsconfig.json"
+rules:
+  no-console:
+    - error
+    - allow:
+        - info
+        - warn
+        - error
+  max-len:
+    - error
+    - code: 140
+      tabWidth: 2
+      ignoreUrls: true
+      ignoreStrings: true
+      ignoreTemplateLiterals: true
+      ignoreComments: true
+      ignoreRegExpLiterals: true
+  "@typescript-eslint/no-empty-interface":
+    - off
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies:
+        - "./**/*.spec.{js,jsx,cjs,mjs,ts,tsx,mts}"
+      optionalDependencies: false
+      peerDependencies: true
+  import/no-unresolved:
+    - error
+  import/order:
+    - off
+overrides:
+  - files:
+      - "./**/*.spec.{js,jsx,cjs,mjs,ts,tsx,mts}"
+    rules:
+      "@typescript-eslint/no-unused-vars":
+        - warn
+        - args: none

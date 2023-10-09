@@ -1,0 +1,1 @@
+{"version":3,"file":"readFile.mjs","sourceRoot":"","sources":["readFile.mts"],"names":[],"mappings":"AAAA,OAAO,EAAC,QAAQ,IAAI,IAAI,EAAC,MAAM,kBAAkB,CAAC;AAElD,MAAM,CAAC,MAAM,QAAQ,GAAG,CACtB,IAAY,EACK,EAAE,CAAC,IAAI,CAAC,IAAI,EAAE;IAC/B,QAAQ,EAAE,MAAM;IAChB,IAAI,EAAE,GAAG;CACV,CAAC,CAAC"}

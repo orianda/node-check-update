@@ -1,0 +1,8 @@
+/.idea
+/.nyc_output
+/coverage
+/node_modules
+/tmp
+/var
+/npm-debug.log
+/*.tsbuildinfo
